@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <img src="assets/images/logo.png" alt="Logo da Loja" class="logo mb-2" style="max-width: 200px;">
+        <h1>Carrinho de Compras</h1>
+        <nav class="nav justify-content-center">
+            <a class="nav-link text-white" href="index.html">Início</a>
+            <a class="nav-link text-white" href="produtos.html">Produtos</a>
+            <a class="nav-link text-white" href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+    
+    <main class="container mt-4">
+        <h2>Itens no Carrinho</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Ação</th>
+                </tr>
+            </thead>
+            <tbody id="carrinho-itens">
+                <!-- Itens do carrinho serão carregados aqui via JavaScript -->
+            </tbody>
+        </table>
+        <h3 id="total">Total: R$ 0,00</h3>
+        <a href="checkout.html" class="btn btn-success">Finalizar Compra</a>
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Copyright MM Store - 2024. Todos os direitos reservados.  </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

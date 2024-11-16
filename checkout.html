@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Checkout</title>
+    <style>
+        .step {
+            display: none; /* Esconde todas as etapas inicialmente */
+        }
+        .step.active {
+            display: block; /* Mostra apenas a etapa ativa */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <img src="assets/images/logo.png" alt="Logo da Loja" class="logo mb-2" style="max-width: 200px;">
+        <h1>Checkout</h1>
+        <nav class="nav justify-content-center">
+            <a class="nav-link text-white" href="index.html">Início</a>
+            <a class="nav-link text-white" href="produtos.html">Produtos</a>
+            <a class="nav-link text-white" href="carrinho.html">Carrinho</a>
+        </nav>
+    </header>
+    
+    <main class="container mt-4">
+        <form id="checkout-form">
+            <!-- Etapa 1: Dados Pessoais -->
+            <div class="step active" id="step1">
+                <h2 class="text-center">Dados Pessoais</h2>
+                <div class="form-group">
+                    <label for="nome">Nome Completo <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="cep">CEP <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP" required pattern="\d{5}-?\d{3}" maxlength="10" onkeypress="return somenteNumeros(event)">
+                </div>
+                <div class="form-group">
+                    <label for="rua">Rua <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="rua" placeholder="Digite sua rua" required>
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required>
+                </div>
+                <button type="button" class="btn btn-primary btn-block" onclick="validarEAvancar(1)">Próximo</button>
+            </div>
+
+            <!-- Etapa 2: Detalhes da Compra -->
+            <div class="step" id="step2">
+                <h2 class="text-center">Detalhes da Compra</h2>
+                <h3>Resumo do Pedido</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resumo-pedido">
+                        <!-- Itens do carrinho serão carregados aqui via JavaScript -->
+                    </tbody>
+                </table>
+                <h3 id="total">Total: R$ 0,00</h3>
+                <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Voltar</button>
+                <button type="button" class="btn btn-primary" onclick="nextStep(2)">Próximo</button>
+            </div>
+
+            <!-- Etapa 3: Pagamento -->
+            <div class="step" id="step3">
+                <h2 class="text-center">Pagamento</h2>
+                <div class="form-group">
+                    <label for="pagamento">Escolha a forma de pagamento:</label>
+                    <div>
+                        <input type="radio" id="cartao-credito" name="pagamento" value="cartao-credito" required>
+                        <label for="cartao-credito">Cartão de Crédito</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cartao-debito" name="pagamento" value="cartao-debito">
+                        <label for="cartao-debito">Cartão de Débito</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pix" name="pagamento" value="pix">
+                        <label for="pix">Pix</label>
+                    </div>
+                </div>
+                
+                <div id="dados-cartao" style="display:none;">
+                    <div class="form-group">
+                        <label for="numero-cartao">Número do Cartão de Crédito/Débito <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="numero-cartao" placeholder="Digite o número do cartão" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-expiracao">Data de Expiração <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="data-expiracao" placeholder="MM/AA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="cvv" placeholder="Digite o CVV" required>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-secondary" onclick="prevStep(3)">Voltar</button>
+                <button type="submit" class="btn btn-success btn-block">Finalizar Compra</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Copyright MM Store - 2024. Todos os direitos reservados.  </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

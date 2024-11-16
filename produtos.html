@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <img src="assets/images/logo.png" alt="Logo da Loja" class="logo mb-2" style="max-width: 200px;">
+        <h1>Produtos Disponíveis</h1>
+        <nav class="nav justify-content-center">
+            <a class="nav-link text-white" href="index.html">Início</a>
+            <a class="nav-link text-white" href="carrinho.html">Carrinho</a>
+            <a class="nav-link text-white" href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+    
+    <div class="container mt-4">
+        <div class="input-group mb-3">
+            <input type="text" id="search" class="form-control" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="filtrarProdutos()">Buscar</button>
+            </div>
+        </div>
+        
+        <div class="row" id="produtos">
+            <!-- Os produtos serão carregados aqui via JavaScript -->
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Copyright MM Store - 2024. Todos os direitos reservados.  </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

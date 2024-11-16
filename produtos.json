@@ -1,0 +1,280 @@
+[
+    {
+        "id": 1,
+        "name": "POP Asta (Black Clover - Anime)",
+        "price": 120.00,
+        "image": "assets/images/pop_asta_black_clover.jpg",
+        "quantity": 5,
+        "destaque": false
+    },
+
+    {
+        "id": 2,
+        "name": "POP Batman (DC - Herois)",
+        "price": 169.00,
+        "image": "assets/images/pop_batman_DC.jpg",
+        "quantity": 15,
+        "destaque": true
+    },
+
+    {
+        "id": 3,
+        "name": "POP Black Asta (Black Clover - Anime)",
+        "price": 135.00,
+        "image": "assets/images/pop_black_Asta_black_clover.jpg",
+        "quantity": 0,
+        "destaque": true
+    },
+
+    {
+        "id": 4,
+        "name": "POP Captain America (DC - Herois)",
+        "price": 200.00,
+        "image": "assets/images/pop_capAmerica_marvel.jpg",
+        "quantity": 6,
+        "destaque": false
+    },
+
+    {
+        "id": 5,
+        "name": "POP Flash (DC - Herois)",
+        "price": 150.00,
+        "image": "assets/images/pop_flash_DC.jpg",
+        "quantity": 6,
+        "destaque": true
+    },
+
+    {
+        "id": 6,
+        "name": "POP Gon Freecss (Hunter X Hunter - Anime)",
+        "price": 150.00,
+        "image": "assets/images/pop_gon_hunterXhunter.jpg",
+        "quantity": 8,
+        "destaque": false
+    },
+
+    {
+        "id": 7,
+        "name": "POP Shoyo Hinata (Haikyu!! - Anime)",
+        "price": 260.00,
+        "image": "assets/images/pop_hinata_haikyu.jpg",
+        "quantity": 0,
+        "destaque": true
+    },
+
+    {
+        "id": 8,
+        "name": "POP Hisoka (Hunter X Hunter - Anime)",
+        "price": 140.00,
+        "image": "assets/images/pop_hisoka_hunterXhunter.jpg",
+        "quantity": 9,
+        "destaque": false
+    },
+
+    {
+        "id": 9,
+        "name": "POP Hulk (Marvel - Herois)",
+        "price": 140.00,
+        "image": "assets/images/pop_hulk_marvel.jpg",
+        "quantity": 6,
+        "destaque": true
+    },
+
+    {
+        "id": 10,
+        "name": "POP Inosuke Hashibira (Demon Slayer - Anime)",
+        "price": 140.00,
+        "image": "assets/images/pop_inosuke_demonSlayer.jpg",
+        "quantity": 1,
+        "destaque": true
+    },
+
+    {
+        "id": 11,
+        "name": "POP Iron Man (Marvel - Herois)",
+        "price": 130.00,
+        "image": "assets/images/pop_ironMan_marvel.jpg",
+        "quantity": 9,
+        "destaque": false
+    },
+
+    {
+        "id": 12,
+        "name": "POP Jack (Black Clover - Anime)",
+        "price": 100.00,
+        "image": "assets/images/pop_jack_black_clover.jpg",
+        "quantity": 10,
+        "destaque": false
+    },
+
+    {
+        "id": 13,
+        "name": "POP Tobio Kageyama (Haikyu!! - Anime)",
+        "price": 100.00,
+        "image": "assets/images/pop_kageyama_haikyu.jpg",
+        "quantity": 9,
+        "destaque": true
+    },
+
+    {
+        "id": 14,
+        "name": "POP Killlua Zoldyck (Hunter X Hunter - Anime)",
+        "price": 180.00,
+        "image": "assets/images/pop_killua_hunterXhunter.jpg",
+        "quantity": 0,
+        "destaque": true
+    },
+
+    {
+        "id": 15,
+        "name": "POP Leorio (Hunter X Hunter - Anime)",
+        "price": 130.00,
+        "image": "assets/images/pop_leorio_hunterXhunter.jpg",
+        "quantity": 5,
+        "destaque": false
+    },
+
+    {
+        "id": 16,
+        "name": "POP Logan (Marvel - Herois)",
+        "price": 150.00,
+        "image": "assets/images/pop_logan_marvel.jpg",
+        "quantity": 12,
+        "destaque": true
+    },
+
+    {
+        "id": 17,
+        "name": "POP Machi (Hunter X Hunter - Anime)",
+        "price": 103.00,
+        "image": "assets/images/pop_machi_hunterXhunter.jpg",
+        "quantity": 0,
+        "destaque": false
+    },
+
+    {
+        "id": 18,
+        "name": "POP Wonder Woman (DC - Herois)",
+        "price": 170.00,
+        "image": "assets/images/pop_mulherMaravilha_DC.jpg",
+        "quantity": 2,
+        "destaque": true
+    },
+
+    {
+        "id": 19,
+        "name": "POP Yu Nushinoya (Haikyu - Anime)",
+        "price": 140.00,
+        "image": "assets/images/pop_nishinoya_haikyu.jpg",
+        "quantity": 0,
+        "destaque": false
+    },
+
+    {
+        "id": 20,
+        "name": "POP Noelle (Black Clover - Anime)",
+        "price": 180.00,
+        "image": "assets/images/pop_noelle_black_clover.jpg",
+        "quantity": 1,
+        "destaque": false
+    },
+
+    {
+        "id": 21,
+        "name": "POP Nezuko Kamado (Demon Slayer - Anime)",
+        "price": 120.00,
+        "image": "assets/images/pop_nuzuko_demonSlayer.jpg",
+        "quantity": 8,
+        "destaque": true
+    },
+
+    {
+        "id": 22,
+        "name": "POP Robin (DC - Herois)",
+        "price": 450.00,
+        "image": "assets/images/pop_robin_DC.jpg",
+        "quantity": 1,
+        "destaque": false
+    },
+
+    {
+        "id": 23,
+        "name": "POP Satoro Gojo (Jujutsu Kaisen - Anime)",
+        "price": 290.00,
+        "image": "assets/images/pop_satoru_gojo_jujutsu.jpg",
+        "quantity": 5,
+        "destaque": true
+    },
+
+    {
+        "id": 24,
+        "name": "POP Scarlet Witch (Marvel - Herois)",
+        "price": 140.00,
+        "image": "assets/images/pop_scarlet_marvel.jpg",
+        "quantity": 4,
+        "destaque": true
+    },
+
+    {
+        "id": 25,
+        "name": "POP Ryomen Sukuna (Jujutsu Kaisen - Anime)",
+        "price": 167.00,
+        "image": "assets/images/pop_sukuna_jujutsu.jpg",
+        "quantity": 7,
+        "destaque": true
+    },
+
+    {
+        "id": 26,
+        "name": "POP Superman (DC - Herois)",
+        "price": 130.00,
+        "image": "assets/images/pop_superMan_DC.jpg",
+        "quantity": 4,
+        "destaque": false
+    },
+
+    {
+        "id": 27,
+        "name": "POP Tanjiro Kamado (Demon Slayer - Anime)",
+        "price": 155.00,
+        "image": "assets/images/pop_tanjiro_demonSlayer.jpg",
+        "quantity": 2,
+        "destaque": false
+    },
+
+    {
+        "id": 28,
+        "name": "POP Kei Tsukishima (Haikyu!! - Anime)",
+        "price": 140.00,
+        "image": "assets/images/pop_tsukishima_haikyu.jpg",
+        "quantity": 3,
+        "destaque": false
+    },
+
+    {
+        "id": 29,
+        "name": "POP Venon (Marvel - Herois)",
+        "price": 180.00,
+        "image": "assets/images/pop_venom_marvel.jpg",
+        "quantity": 0,
+        "destaque": true
+    },
+
+    {
+        "id": 30,
+        "name": "POP Yuji Itadori (Jujutsu Kaisen - Anime)",
+        "price": 113.00,
+        "image": "assets/images/pop_Yuji_Itadori_jujutsu.jpg",
+        "quantity": 7,
+        "destaque": true
+    },
+
+    {
+        "id": 31,
+        "name": "POP Yuno (Black Clover - Anime)",
+        "price": 160.00,
+        "image": "assets/images/pop_yuno_black_clover.jpg",
+        "quantity": 6,
+        "destaque": false
+    }
+]
